@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tensor"
-date:   2018-12-12 12:22:26 +0800
+date:   2019-04-27 00:00:00 +0800
 categories: Mathematics
 excerpt: 
 ---
@@ -85,5 +85,5 @@ P_{j}=\mathbf{P}\cdot \mathbf{g}_{j}=P^{k}\mathbf{g}_{k}\cdot \mathbf{g}_{j}=P^{
 $$  
 
   
-**参考文献**  
+### 参考文献  
 1. 《张量分析》，黄克智，薛明德，陆明万，清华大学出版社，2003年，第2版，p5-10

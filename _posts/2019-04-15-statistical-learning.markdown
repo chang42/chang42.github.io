@@ -2,7 +2,7 @@
 layout: post
 title:  "统计学习方法"
 date:   2019-04-15 12:22:26 +0800
-categories: jekyll update
+categories: Machine Learning
 excerpt: 统计学习是关于计算机基于数据构建概率统计模型并运用模型对数据进行预测与分析的一门学科，又称统计机器学习。
 ---
 
