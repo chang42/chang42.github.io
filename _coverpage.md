@@ -3,7 +3,7 @@
 # Atom Hunter
 
 [GitHub](https://github.com/chang42)
-[About](readme)
+[About](/README.md)
 
 <!-- 背景色 -->
 
