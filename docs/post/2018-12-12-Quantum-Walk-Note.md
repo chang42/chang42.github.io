@@ -1,18 +1,10 @@
----
-layout: post
-title:  "Quantum Walk Note"
-date:   2018-12-12 12:22:26 +0800
-categories: AMO
-excerpt: 
----
-
-## Quantum random walk overview  
-### Fundamentals of Quantum Walks  
+# Quantum random walk overview  
+## Fundamentals of Quantum Walks  
 量子行走的概念最早由Y. Aharonov, L. Davidovich and N. Zagury三位物理学家于1993年的一项工作中提出[1] ，量子行走分为离散(discrete)量子行走和连续(continuous)量子行走，两者间的主要区别为演化算符的选取，在离散量子行走中，相应的系统演化算符以离散的时间间隔作用于系统，而连续量子行走中，演化算符可以在任意时间作用于系统，其对应的模型为[2]：  
-* The first model, called discrete quantum walks, consists of two quantum mechanical systems, named a walker and a coin, as well as an evolution operator which is applied to both systems only in discrete time steps. The mathematical structure of this model is evolution via unitary operator, i.e. $$\vert\Psi>_{t_2}= \tilde{U}\vert\Psi>_{t_1}$$.  
+* The first model, called discrete quantum walks, consists of two quantum mechanical systems, named a walker and a coin, as well as an evolution operator which is applied to both systems only in discrete time steps. The mathematical structure of this model is evolution via unitary operator, i.e. $$\vert\Psi>_{t_2}= \tilde{U}\vert\Psi>_{t_1}$$   
 * The second model, named continuous quantum walks, consists of a walker and an evolution (Hamiltonian) operator of the system that can be applied with no timing restrictions at all, i.e. the walker walks any time. The mathematical structure of this model is evolution via the Schr¨odinger equation.  
   
-### One dimensional quantum walk  
+## One dimensional quantum walk  
 一维量子行走(Discrete quantum walks on a line (DQWL))是量子行走的最简单模型，已经有大量研究，其描述了一个有两个内态自由度的粒子在一维晶格中运动，一维晶格可以为线形或环形。DQWL由两个子系统构成：coin和walker，$\mathcal{H}_P$为walker所在的有限维无穷希尔伯特空间，代表walker的位置$\vert j>$，$\mathcal{H}_C$为coin所在的二维希尔伯特空间，代表coin的“正面$\vert\uparrow>$”或“反面$\vert\downarrow>$”。DQWL总系统的希尔伯特空间表示为$\mathcal{H}=\mathcal{H}_P\otimes\mathcal{H}_C$。系统的演化算符$U$包含有两个幺正操作[3, 4]，分别为：  
 1. Rotation of the spin around y axis by angle $\theta$, corresponding to the operation  
 $$  
@@ -45,20 +37,20 @@ $$
 上面的式中我们看到，自旋$\sigma_z$表示的自旋转移算符与准动量$k$表示的轨道自由度混合到了一起，该自旋-轨道耦合是实现拓扑相的关键[4]。同时连续量子行走并不具有相类似的自旋-轨道耦合作用。  
 由于系统拥有两个内部自由度，可以将$H(\theta)$写为二能带哈密顿  
 $$  
-    H(\theta)=\int\limits_{-\pi}^{\pi}dk[E_{\theta}(k)\boldsymbol{n}_{\theta}(k)\cdot \boldsymbol{\sigma}]\otimes\vert k><k\vert
+    H(\theta)=\int\limits_{-\pi}^{\pi}dk[E_{\theta}(k)\mathbf{n}_{\theta}(k)\cdot \mathbf{\sigma}]\otimes\vert k><k\vert
 $$  
-其中$$\boldsymbol{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$$为Pauli矩阵向量，单位向量$$\boldsymbol{n}_{\theta}(k)=(n_x,n_y,n_z)$$定义自旋本征态在动量$k$方向的量子化轴[4,5,6]。  
-因为系统的演化是周期性的，因此相应的能带结构为$2\pi$周期的准能量谱。对于$\theta\neq 0\ or\ 2\pi$，$E_{\theta}(k)$和$\boldsymbol{n}_{\theta}(k)$  
+其中$$\mathbf{\sigma}=(\sigma_x,\sigma_y,\sigma_z)$$为Pauli矩阵向量，单位向量$$\mathbf{n}_{\theta}(k)=(n_x,n_y,n_z)$$定义自旋本征态在动量$k$方向的量子化轴[4,5,6]。  
+因为系统的演化是周期性的，因此相应的能带结构为$2\pi$周期的准能量谱。对于$\theta\neq 0\ or\ 2\pi$，$E_{\theta}(k)$和$\mathbf{n}_{\theta}(k)$  
 $$  
 \begin{aligned}
     & \cos E_{\theta}(k)=\cos(\theta/2)\cos k\\
-    & \boldsymbol{n}_{\theta}(k)=\frac{[\sin(\theta/2)\sin k,\sin(\theta/2)\cos k,-\cos(\theta/2)\sin k]}{\sin E_{\theta}(k)}
+    & \mathbf{n}_{\theta}(k)=\frac{[\sin(\theta/2)\sin k,\sin(\theta/2)\cos k,-\cos(\theta/2)\sin k]}{\sin E_{\theta}(k)}
 \end{aligned}
 $$  
 
 当$\theta=0$或$2\pi$时，$H(\theta)$的能量谱没有能带间隙，并且当$k=0,\ \pi$时，$\sin E_{\theta}(k)$为零。  
 
-### Toplogical Phase in 1D $\&$ 2D
+## Toplogical Phase in 1D $\&$ 2D
 ...[6]
 
 ## Appendix A: The Bloch Sphere
@@ -124,7 +116,7 @@ $$
 \end{aligned}  
 $$  
 
-### References  
+## References  
 1. Yakir Aharonov, Luiz Davidovich, and Nicim Zagury. Quantum random walks. Physical Review A, 48(2):1687, 1993.  
 2. Salvador Elías Venegas-Andraca. Quantum walks: a comprehensive review. Quantum Information Processing, 11(5):1015–1106, 2012.
 3. Julia Kempe. Quantum random walks: an introductory overview. Contemporary Physics, 44(4):307–327, 2003.  
