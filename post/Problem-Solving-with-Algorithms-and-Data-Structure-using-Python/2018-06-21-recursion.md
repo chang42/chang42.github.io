@@ -1,6 +1,6 @@
 
-# 递归（Recursion）  
-## 4.1 递归（Recursion）
+# 递归 Recursion  
+## 4.1 递归 Recursion  
 递归是将规模较大的问题层层分割为单个较小的子问题来求解，通常递归包含方程本身。  
 ## 4.2 数列求和  
 比如利用累加器 `theSum` 来计算数列的和：
@@ -27,17 +27,18 @@ listSum([1, 3, 5, 7, 9])
 
 
 如果不使用 `while` 和 `for` 循环，我们还有什么其他办法计算列表的和呢？我们先用括号表示法重新写一下列表求和：  
-$(1+(3+(5+(7+9))))$  
+$$(1+(3+(5+(7+9))))$$  
 注意最里面的括号内的$(7+9)$我们不借助循环很容易就可以计算出来，实际上，利用下面的一系列式子就可以计算最后的和：  
-$\begin{align}
+$$
+\begin{aligned}
 total = (1+(3+(5+(7+9))))& \\ 
 total = (1+(3+(5+16)))&  \\
 total = (1+(3+21))&  \\
 total = (1+24)&  \\
 total = 25&
-\end{align}$  
+\end{aligned}$$  
 在Python中，我们先声明列表 `numList` 为列表第一项 `numList[0]` 和其余项 `numList[1:]` 的和：  
-$listSum(numList) = first(numList)+listSum(rest(numList))$  
+$$listSum(numList) = first(numList)+listSum(rest(numList))$$  
 
 
 ```python
@@ -670,7 +671,7 @@ searchFrom(myMaze, myMaze.startRow, myMaze.startCol)
 优化问题（optimization problem）最经典的例子便是找零问题，即一个自动贩卖机生产商想要使每笔交易的找零用尽可能少的硬币。假如一位顾客投进1元消费了37分，最少找回他多少硬币呢？答案是6个：2个25分，1个10分，3个1分。策略是首先用尽可能多的最大额硬币，然后使用稍小一点面额的硬币，这即是所谓的贪婪算法（greedy method），因为我们一开始就尝试解决问题的最大的一部分。  
 贪婪算法在使用1，5，10和25分面额硬币的国家奏效，但是某些国家除此之外可能还会有21分的硬币，这个时候贪婪算法就毫无办法了，它依然会给出最少6个硬币的回答，但显然最佳答案是3个21分的硬币。  
 下面来看利用递归如何解决这个问题，如果等额兑换，就需要一个硬币，如果没有相符的面值，会有好几个选择，符合我们要求的是硬币总数量最少的组合，硬币的数量可依下面来计算：  
-$
+$$
 numCoins=min \left\{
 \begin{array}{l}
 1+numCoins(originalamount-1)\\
@@ -678,7 +679,7 @@ numCoins=min \left\{
 1+numCoins(originalamount-10)\\
 1+numCoins(originalamount-25)\\
 \end{array}\right.
-$  
+$$  
 用下面的代码实现上述算法，行3为终止条件：用1个基本的面额找零。如果没有等额的基本面额硬币，利用递归调用尝试不同的硬币面额来使找零的数量最小，行6即如何利用列表生成器来过滤小于当前找零值的硬币列表。行7的递归调用会以选中的基本面额值使找零的总数逐渐减少，同时使找零硬币总数加1。
 
 

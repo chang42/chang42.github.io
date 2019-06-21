@@ -11,7 +11,7 @@
     * [递归](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-recursion.md)
     * [排序和搜索](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-sortting-and-searching.md)
     * [树](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-tress-and-tree-algorithms.md)
-    * [图]()
+    * [图](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-graphs-and-graph-algorithms.md)
 * [量子行走](/post/2018-12-12-quantum-walk-note)  
 * [统计机器学习](/post/2019-04-15-statistical-learning)  
 * [张量](/post/2019-04-27-tensor)  

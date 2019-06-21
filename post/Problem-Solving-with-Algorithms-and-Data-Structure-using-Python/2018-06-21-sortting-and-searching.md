@@ -320,10 +320,10 @@ $d_i=伪随机数序列$，称为伪随机探测(Pseudorandom Probing)
 但线性探测的弊端是会产生聚集（Cluster），在函数地址的表中，散列函数的结果不均匀地占据表的单元，在发生冲突的位置周围形成区块。会对其他插入项有影响，例如添加项20时，在散列值0处的聚集使它跳过这些插槽，在之后寻找空插槽。  
 ![clustering.png](http://interactivepython.org/courselib/static/pythonds/_images/clustering.png)  
 可以通过“+3”探测法一定程度上避免聚集，以上方法通称为再散列（rehashing），对于简单的线性探测：  
-$newhashvalue=rehash(oldhashvalue),rehash(pos)=(pos+1)%sizeoftable$  
+$$newhashvalue=rehash(oldhashvalue),rehash(pos)=(pos+1)%sizeoftable$$  
 ![linearprobing2.png](http://interactivepython.org/courselib/static/pythonds/_images/linearprobing2.png)  
 对于“+skip”探测：  
-$newhashvalue=rehash(oldhashvalue),rehash(pos)=(pos+skip)%sizeoftable$   
+$$newhashvalue=rehash(oldhashvalue),rehash(pos)=(pos+skip)%sizeoftable$$   
 为了保证所有的插槽都能被寻址，通常选用散列表的长度作为 skip 值。  
 此外还有平方探测(Quadratic Probing)  
 ![quadratic.png](http://interactivepython.org/courselib/static/pythonds/_images/quadratic.png)  

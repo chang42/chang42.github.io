@@ -1,11 +1,11 @@
 
 # 基本数据结构 Basic Data Structures   
-## 3.2 线性数据结构(Linear Structures)  
+## 3.2 线性数据结构 Linear Structures  
 四种数据形式：栈(stacks)、队列(queues)、双端队列(deques)、列表(lists)——数据集合各项的顺序由添加和删除的方式决定。如果添加某项后，该项处于先前添加元素和后添加元素之间的位置，则该数据集合称为线性数据结构(linear data structures)。  
 线性数据结构有两个端，添加和删除项的方式是区分线性数据结构和其他数据结构的依据，特别是添加和删除发生的位置。
 
-## 3.3 栈(stacks)  
-### 3.3.1 栈(stacks) 
+## 3.3 栈 stacks  
+### 3.3.1 栈 stacks 
 栈(stacks)为限制添加和删除项只能在同一端的项的有序集合，该端称为“顶(top)”，与顶对应端的称为“底(base)”。栈有时又称作LIFO（last-in first-out, 后进先出），最后被添加的项最先被删除，它基于项在集合中的沉淀时间长短做排序，新来的项在上面，旧的项在底端，可以想象桌子上的一摞书。  
 ![image](http://interactivepython.org/courselib/static/pythonds/_images/bookstack2.png)
 ![image](http://interactivepython.org/courselib/static/pythonds/_images/primitive.png)
@@ -322,13 +322,13 @@ print(parChecker('[{()]'))
 ![image](http://interactivepython.org/courselib/static/pythonds/_images/dectobin.png)  
   
 十进制($233_{10}$)：  
-$2\times10^2+3\times10^1+3\times10^0$  
+$$2\times10^2+3\times10^1+3\times10^0$$  
 二进制($11101001_2$)：  
-$1\times2^7+1\times2^6+1\times2^5+0\times2^4+1\times2^3+0\times2^2+0\times2^1+1\times2^0$  
+$$1\times2^7+1\times2^6+1\times2^5+0\times2^4+1\times2^3+0\times2^2+0\times2^1+1\times2^0$$  
 八进制($351_8$)：  
-$3\times8^2+5\times8^1+1\times8^0$  
+$$3\times8^2+5\times8^1+1\times8^0$$  
 十六进制($E9_{16}$)：  
-$14\times16^1+9\times16^0$  
+$$14\times16^1+9\times16^0$$  
 
 
 ```python
@@ -394,7 +394,7 @@ print(baseConverter(233, 16))
     E9
 
 
-## 3.4 中缀、前缀和后缀表示法（Infix, Prefix and Postfix Expression）  
+## 3.4 中缀、前缀和后缀表示法 Infix, Prefix and Postfix Expression  
 对于一个数学表达式：$(A+B)*C+D$，我们很容易分辨其运算的先后顺序，因为不同的运算具有不同的优先级，这种表示方式为中缀表达式，但是对于计算机而言，它需要确切地知道运算操作的顺序，可以通过全括号表示来区分运算的操作顺序，例如上面的式子可以表示为：$(((A+B)*C)+D)$，这样做的好处是不用考虑运算操作的优先级。  
 除此之外，还有两种非常重要的表示形式——前缀（prefix）和后缀（postfix）表示，又称波兰（Polish notation）和逆波兰（Reverse Polish notation）表示，前缀表示的特点是操作符置于操作数的前面，即：$+ * + A B C D $；后缀表示的特点是所有操作符置于操作数的后面，即：$A B + C * D + $。这样做的好处是不再需要括号了，运算的顺序仅通过表达顺序决定，减少了标记符号的使用。  
   
@@ -609,8 +609,8 @@ postfixEval('4 5 6 * +')
 
 
 
-## 3.5 队列（Queue）  
-### 3.5.1 队列（Queue）  
+## 3.5 队列 Queue  
+### 3.5.1 队列 Queue  
 和栈一样，队列（queue）也是项的有序集合，但是，添加新的项在其一端进行，该端称为队尾（rear），删除项在另一端进行，该端称为队头（front）。当一个元素在队尾进入队列以后，一直超队头移动，直到它成为下一个被删除的元素为止。最先被添加进队列的项位于集合的末端，在集合中存活时间最长的项位于队头，该特性称为先进先出（FIFO, first-in first-out/first-come first-seved）。  
 ![image.png](http://interactivepython.org/courselib/static/pythonds/_images/basicqueue.png)  
 生活中我们经常排队，在队列中，只有一个方向进另外一个方向出，人们也别想插队，上图便是Python语言中的简单队列对象示意。在计算机科学场景中，操作系统使用不同的队列来控制进程，对于进程处理的时间先后安排便是基于一个队列算法——如何尽快地执行程序和尽可能多地服务更多的用户。  
@@ -756,7 +756,7 @@ q.size()
 
 
 
-### 3.5.4 队列模拟——击鼓传花（Hot potato）
+### 3.5.4 队列模拟——击鼓传花 Hot potato  
 让我们一个实际生活中运用队列FIFO原则的例子，在击鼓传花游戏中人们围坐成一圈，花（或者其他信物）被挨个传递，当鼓点突然停止时，停止传递，花落在谁那里就会被淘汰，直到剩下最后一个人  
 ![image.png](http://interactivepython.org/courselib/static/pythonds/_images/hotpotato.png)  
 另外一个著名的问题约瑟夫环（Josephus problem or Josephus permutation），人们站在一个等待被处决的圈子里。从圆圈中的指定点开始计数，并沿指定方向围绕圆圈进行。在跳过指定数量的人之后，淘汰这个人。对剩下的人重复该过程，从下一个人开始，朝同一方向跳过相同数量的人，直到只剩下一个人。  
@@ -800,7 +800,7 @@ hotPotato(["Bill", "David", "Susan", "Jane", "Kent", "Brad"], 7)
 ![image.png](http://interactivepython.org/courselib/static/pythonds/_images/simulationsetup.png)  
 该模型需要一些概率的知识，例如，学生会打印1到20页长度的论文，如果1到20页长度的论文近似等可能出现，这样打印任务的实际长度可以用1到20中的随机数来模拟，即1到20的任意长度出现的机率相同。  
 如果有10个学生在机房，这些学生通常会在一小时内平均提交两次打印任务，那么任意给定时间点创建打印任务概率是多少？我们可以考虑任务时间比，每小时20个任务意味着每180秒一个任务：  
-$\frac{20 tasks}{1 hours}\times\frac{1 hours}{60 minutes}\frac{1 minute}{60 seconds} = \frac{1 task}{180 seconds}$  
+$$\frac{20 tasks}{1 hours}\times\frac{1 hours}{60 minutes}\frac{1 minute}{60 seconds} = \frac{1 task}{180 seconds}$$  
 用1到180之间的随机数来模拟每秒钟打印任务创建的几率，如果数字是180，可以说该任务已经被创建，需要注意的是，可能会一下子创建许多任务，或者需要等待一段时间才有任务。这就是模拟的实质，需要用已知的参数来尽可能真实地反映实际情况。
 
 #### 主要模拟流程  
@@ -946,8 +946,8 @@ for i in range(10):
 
 我们分别以5页/分和10页/分的页面打印速率模拟打印机运行1小时（3600秒）后的状态，可以看到，提高页面打印速率，平均等待时间更短，而且所有打印任务的都完成的概率也更高，因此减慢速率提高打印质量并不是一个好的策略，因为学生的平均等待时间更长了。
 
-## 3.6 双端队列（Deque）
-### 3.6.1 双端队列（Deque）
+## 3.6 双端队列 Deque  
+### 3.6.1 双端队列 Deque  
 双端队列（deque）是类似于队列的有序项集合，它也有两个端，队头和队尾，项在集合中位置不变，但它与队列相区别的是其添加和删除项的非限制特性——新的项在队头和队尾都可以添加，同时，已有项在两端都可以被删除，在某种意义上，该混合线性结构在单一数据结构框架下提供了栈和队列的所有特性。虽然如此，但其并不需要遵循栈或队列所必须遵循的LIFO或FIFO顺序，而是取决于使用者的操作。  
 ![image.png](http://interactivepython.org/courselib/static/pythonds/_images/basicdeque.png)  
 ### 3.6.2 双端队列的抽象数据类  
@@ -1095,7 +1095,7 @@ d.removeFront()
 
 
 
-### 3.6.4 双端队列应用——回文检测（Palindrome-Checker）  
+### 3.6.4 双端队列应用——回文检测 Palindrome-Checker  
 我们可以利用双端队列数据结构来解决经典的回文问题，回文即一个字符串从正向或反向读都是一样的，例如 radar，toot，madam，我们可以构建一个算法来检查输入的字符串字母是否回文。  
 ![image.png](http://interactivepython.org/courselib/static/pythonds/_images/palindromesetup.png)  
 利用双端队列来存储字符串的字母，从左至右操作字符串，在双端队列的队尾依次添加每个字母，在这一点上，双端队列表现为队列特性，然后，利用双端队列的双端可操作性，同时从双端队列的队头和队尾移出项，然后比较，如果相同，则继续操作，直到双端随列为空或只剩一个元素，这取决于其长度是奇数还是偶数。具体实现如下：
@@ -1146,8 +1146,8 @@ palChecker('radar')
 
 
 
-## 3.7 列表（List）  
-### 3.7.1 无序列表（Unordered List）
+## 3.7 列表 List  
+### 3.7.1 无序列表 Unordered List  
 在之前的讨论中，我们利用Python中的列表实现了一些抽象数据类型，足见列表是一简单强大的集合机制，同时提供了各式的操作，但是并不是每一种程序语言中，都会有列表集合，因此，我们需要手动实现一下它。  
 列表是项的集合，项在集合中的相对位置保持不变，它可被视为是无序的，且无重复项。列表通过逗号来分隔。  
 无序列表的一些操作有：  
@@ -1163,7 +1163,7 @@ palChecker('radar')
 * `pop()` 删除列表的最后一项并返回该项，不需要参数，返回该项，需假设列表至少包含一个项。
 * `pop(pos)` 删除指定位置的项，需要参数 `position` 返回该项，需假设列表中已存在该项。  
   
-### 3.7.2 无序列表的的实现：链表（Linked Lists）  
+### 3.7.2 无序列表的的实现：链表 Linked Lists  
 ![image](http://interactivepython.org/courselib/static/pythonds/_images/idea.png)  
 ![image](http://interactivepython.org/courselib/static/pythonds/_images/idea2.png)  
 如上图中，各项位置随机，如果各项之间的相对位置可以表示成各项之间的相对链接，这样只需知道第一项的位置，就可以知道其他各项的位置，第一项称为列表的表头（head），最后一项无下一项，指向空。之所以这样规定是因为如果列表在内存中连续存储，则插入和删除会移动列表的部分或全部项，线性开销会很大。  
