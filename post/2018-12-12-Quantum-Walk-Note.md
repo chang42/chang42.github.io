@@ -17,6 +17,7 @@ R_y(\theta) =
 $$  
 where $\sigma_y$ is a Pauli operator. The operator on the spatial degrees of freedom is identity, and we suppress this in the following.  
 2. Spin-dependent translation T of the particle, where spin up particle is move to the right by one lattice site and spin down particle is moved to the left by one lattice site. Explicitly, $T =\sum_{j=-\infty}^{\infty}\vert j + 1>< j \vert\otimes\vert ↑>< \vert + \vert j − 1><j\vert\otimes\vert↓><↓ \vert$.  
+![Discrete time quantum walk protocol](../_media/discrete_time_quantum_walk.png)  
   
 由于$T$和$R(\theta)$是离散的幺正操作，系统的单步幺正演化算符$U(\theta)=TR(\theta)$又等效于一等效含时哈密顿(Floquet Hamiltonian)在单步操作的时间$\delta t$作用于系统：  
 $$  
@@ -47,12 +48,12 @@ $$
     & \mathbf{n}_{\theta}(k)=\frac{[\sin(\theta/2)\sin k,\sin(\theta/2)\cos k,-\cos(\theta/2)\sin k]}{\sin E_{\theta}(k)}
 \end{aligned}
 $$  
-
+![Quasienergy and bloch sphere](../_media/quasi_energy.png)  
 当$\theta=0$或$2\pi$时，$H(\theta)$的能量谱没有能带间隙，并且当$k=0,\ \pi$时，$\sin E_{\theta}(k)$为零。  
-
+![Quasienergy gapless](../_media/quasi_energy_gapless.png)  
 ## Toplogical Phase in 1D $\&$ 2D
 ...[6]
-
+![Classification of Topological Insulators](../_media/classification_of_topological_insulators.png)  
 ## Appendix A: The Bloch Sphere
 An arbitrary single qubit state can be written:  
 $$  
