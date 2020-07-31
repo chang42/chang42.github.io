@@ -9,11 +9,15 @@ import matplotlib.pyplot as plt
 
 Fresnel Transfer Function (TF) Propagator  
   
-$U_2(x,y)=\mathscr{F}^{-1}\big\{\mathscr{F}\big\{U_1(x,y)\big\}H(f_X,f_Y)\big\}$  
+$$
+U_2(x,y)=\mathscr{F}^{-1}\big\{\mathscr{F}\big\{U_1(x,y)\big\}H(f_X,f_Y)\big\}
+$$  
   
 The trasfer function is   
   
-$H(f_X,f_Y)=e^{jkz}exp\big[-j\pi\lambda z(f_x^2+f_Y^2)\big]$
+$$
+H(f_X,f_Y)=e^{jkz}exp\big[-j\pi\lambda z(f_x^2+f_Y^2)\big]
+$$
 
 
 ```python
@@ -44,11 +48,15 @@ def FresnelPropTF(u1, L, wavelength, z):
 
 Fresnel Impulse Response (IR) Propagator  
   
-$U_2(x,y)=\mathscr{F}^{-1}\big\{\mathscr{F}\big\{U_1(x,y)\big\}\mathscr{F}\big\{h(x,y)\big\}\big\}$  
+$$
+U_2(x,y)=\mathscr{F}^{-1}\big\{\mathscr{F}\big\{U_1(x,y)\big\}\mathscr{F}\big\{h(x,y)\big\}\big\}
+$$  
 
 The impulse response h is  
   
-$h(x,y)=\frac{e^{jkz}}{j\lambda z}exp\big[\frac{jk}{2z}(x^2+y^2)\big]$
+$$
+h(x,y)=\frac{e^{jkz}}{j\lambda z}exp\big[\frac{jk}{2z}(x^2+y^2)\big]
+$$
 
 
 ```python
@@ -78,7 +86,9 @@ def FresnelPropIR(u1, L, wavelength, z):
 
 Fraunhofer Propagation
   
-$U_2(x_2,y_2)=\frac{exp(jkz)}{jkz}exp\big[j\frac{k}{2z}(x_2^2+y_2^2)\big]\iint U_1(x_1,y_1)exp\big[-j\frac{2\pi}{\lambda z}(x_2x_1+y_2y_1)\big]dx_1dy_1$  
+$$
+U_2(x_2,y_2)=\frac{exp(jkz)}{jkz}exp\big[j\frac{k}{2z}(x_2^2+y_2^2)\big]\iint U_1(x_1,y_1)exp\big[-j\frac{2\pi}{\lambda z}(x_2x_1+y_2y_1)\big]dx_1dy_1
+$$  
 
 
 ```python
@@ -237,16 +247,22 @@ plt.title('Irradiance')
 
 ## Wavefront Aberration  
 The wavefront error is described by W(x,y), an optical path difference (OPD) function that represents the difference between the spherical and aberrated wavefront surfaces. x and y are coordinates in the pupil plane.  
-$W(x,y)=W_{ab}(x,y)-W_{sp}(x,y)$  
+$$
+W(x,y)=W_{ab}(x,y)-W_{sp}(x,y)
+$$  
 ![image](../_media/wavefront_aberration.png)  
 Seidel polynomials are often used to describe monochromatic aberrations for rotationally symmetric optical systems, such as most lenses and mirrors. A common form that is applied in conventional imaging systems is described by  
-$W(\hat{u};\rho,\theta)=\sum\limits_{j,m,n}W_{k l m}\hat{u}^k\rho^lcos^m\theta;k=2j+m,l=2n+m$  
+$$
+W(\hat{u};\rho,\theta)=\sum\limits_{j,m,n}W_{k l m}\hat{u}^k\rho^l\cos^m\theta;k=2j+m,l=2n+m
+$$  
 where $\rho$ is a normalized radial distance in the XP and $\rho$ is the angle in the XP. The normalized XP has a radius of 1 where the physical coordinates (x, y) are divided by the XP radius to get normalized coordinates
 $(\hat{x}, \hat{y})$. $\hat{u}_0$is a fractional image height, or normalized image height, defined along the $\hat{u}$ axis in the imaging plane. The fractional image height is the physical height of a given point in the image divided by the maximum image radius being considered.  
 For simulation purposes it is convenient to convert from polar to Cartesian coordinates.  
-$\rho=\sqrt{\hat{x}^2+\hat{y}^2}$ and $\rho cos\theta=\hat{x}$  
+$\rho=\sqrt{\hat{x}^2+\hat{y}^2}$ and $\rho \cos{\theta}=\hat{x}$  
 and the primary aberration are then written  
-$W(\hat{u}_0;\hat{x},\hat{y})=W_d(\hat{x}^2+\hat{y}^2)+W_{040}(\hat{x}^2+\hat{y}^2)^2+W_{131}\hat{u}_0(\hat{x}^2+\hat{y}^2)\hat{x}+W_{222}\hat{u}_0^2\hat{x}^2+W_{220}\hat{u}_0^2(\hat{x}^2+\hat{y}^2)+W_{311}\hat{u}_0^3\hat{x}$  
+$$
+W(\hat{u}_0;\hat{x},\hat{y})=W_d(\hat{x}^2+\hat{y}^2)+W_{040}(\hat{x}^2+\hat{y}^2)^2+W_{131}\hat{u}_0(\hat{x}^2+\hat{y}^2)\hat{x}+W_{222}\hat{u}_0^2\hat{x}^2+W_{220}\hat{u}_0^2(\hat{x}^2+\hat{y}^2)+W_{311}\hat{u}_0^3\hat{x}
+$$  
 ![image](../_media/seidel_aberration.png)  
   
 |Aberration|Coefficient|   $W(x,y)$ term   |
