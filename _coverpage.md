@@ -1,6 +1,7 @@
 ![logo](_media/LaserSword.jpg)
 
 # Xingchang Wang  
+## 王兴昌  
 ### Postdoctoral Researcher  
 ### [<u>SIQSE</u>](https://siqse.sustech.edu.cn/), Southern University of Science and Technology (SUSTech)  
 ### <Quantum Optics|Single Photon|Cold Atom|Quantum Precision Measurement>
