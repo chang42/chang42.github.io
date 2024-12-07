@@ -4,7 +4,9 @@ I'm a postdoctoral researcher supported by SUSTech Presidential Postdoctoral Fel
 
 ### Education
 Ph.D. in Physics, 2019-2023, Southern University of Science and Technology  
+Thesis: [Quantum Interface between Light and Matter in a Cold Atomic Ensemble](https://sustc.primo.exlibrisgroup.com.cn/permalink/86SUSTC_INST/hvjfdm/alma991001826303104181)  
 M.S. in Optics, 2014-2017, Shanxi University  
+Thesis: High Stable Optical Fabry-Pérot Cavity and its Application in Cavity Quantum Electrodynamics  
 B.S. in Physics, 2010-2014, Hebei Normal University  
 
 ### Publications  
