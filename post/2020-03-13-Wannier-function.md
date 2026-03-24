@@ -373,7 +373,7 @@ plt.show()
 
 ```
 
-## Refernce  
+## References  
 [1] Duarte-Gelvez Pedro M., Observation of Antiferromagnetic Correlations in the Fermi-Hubbard Model, PhD Thesis, Rice University, 2014.  
 [2] P. M. Duarte-Gelvez, Band Structure Calculations for an Optical Lattice, https://github.com/PedroMDuarte/thesis-lattice/tree/v0.1, (2014).  
 [3] O. Morsch and M. Oberthaler, Rev. Mod. Phys. 78, 179 (2006).  

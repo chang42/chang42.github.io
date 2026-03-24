@@ -195,7 +195,7 @@ U_{\delta} \equiv \iint d^{3} r d^{3} r^{\prime}\left|\Phi_{j}\left(\boldsymbol{
 $$
 is the "off-site'' interactions, depending on the angle of two dipolar and decaying by the rate of $1/\delta^{3}$. $\epsilon_{j}$ is the energy of a particle in site $j$ absence of tunneling and interactions.  
 
-## Referece  
+## References  
 [1] Alexandre M Zagoskin. Second Quantization. InQuantum Theory of Many-BodySystems, volume 174, pages 3–32. Springer, 1998.   
 [2] Franco Dalfovo, Stefano Giorgini, Lev P. Pitaevskii, and Sandro Stringari. The-ory of Bose-Einstein condensation in trapped gases.Reviews of Modern Physics,71(3):463–512, April 1999.  
 [3] Omjyoti Dutta, Mariusz Gajda, Philipp Hauke, Maciej Lewenstein, Dirk-SörenLühmann, Boris A Malomed, Tomasz Sowiński, and Jakub Zakrzewski. Non-standard Hubbard models in optical lattices: A review.Reports on Progress inPhysics, 78(6):066001, May 2015.  

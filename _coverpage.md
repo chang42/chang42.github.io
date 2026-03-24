@@ -2,12 +2,12 @@
 
 # Xingchang Wang  
 ## 王兴昌  
-### Postdoctoral Researcher  
-### [<u>SIQSE</u>](https://siqse.sustech.edu.cn/), Southern University of Science and Technology (SUSTech)  
-### <Quantum Optics|Single Photon|Cold Atom|Quantum Precision Measurement>
+### Researcher  
+### [<u>Institute of Opto-Electronics (IOE)</u>](https://ioe.sxu.edu.cn/), Shanxi University (SXU)  
+### <Quantum Optics|Single Photon|Cold Atom|Quantum Engineering>
 [Scholar](https://scholar.google.com/citations?user=ZP3ieNgAAAAJ&hl=en)
 [GitHub](https://github.com/chang42)
-[Email](mailto:wangxc8@sustech.edu.cn)
+[Email](mailto:wangxingchang@sxu.edu.cn)
 [About](/README.md)
 
 <!-- 背景色 -->
