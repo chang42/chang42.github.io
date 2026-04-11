@@ -2,6 +2,15 @@
 
 I'm a researcher at Institute of Opto-Electronics, Shanxi University. Previously, I was a postdoctoral researcher supported by SUSTech Presidential Postdoctoral Fellowship. My main research field is experimental AMO, trying to manipulate photons & collective atomic coherence in a single-quantum-level.  
 
+### For undergraduate students
+
+If you are curious about quantum state engineering and enjoy hands-on work, welcome to contact me.  
+
+Here I post some articles and books that inspired me to learn quantum state engineering.  
+- [单个量子态的操纵和测量：2012年诺贝尔物理学奖述评](/post/2026-04-11-Measuring-manipulation-individual-quantum-systems.md)  
+- [从一到无穷大](https://book.douban.com/subject/1441922/)  
+![](/_media/One_Two_Three_Infinity.jpg ":size=200x300")  
+
 ### Education
 - 2019-2023, Ph.D. in Physics, Southern University of Science and Technology  
 Thesis: [Quantum Interface between Light and Matter in a Cold Atomic Ensemble](https://sustc.primo.exlibrisgroup.com.cn/permalink/86SUSTC_INST/hvjfdm/alma991001826303104181)  

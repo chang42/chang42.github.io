@@ -1,3 +1,10 @@
+
+* [量子行走](/post/2018-12-12-quantum-walk-note.md)
+* [张量](/post/2019-04-27-tensor.md)
+* [Fourier Optics](/post/2019-01-24-Fourier-Optics.md)
+* [Bose-Hubbard model](/post/2020-01-12-Bose-Hubbard-model.md)
+* [Wannier function](/post/2020-03-13-Wannier-function.md)
+* [单个量子态的操纵和测量](/post/2026-04-11-Measuring-manipulation-individual-quantum-systems.md)
 * 学习Python
     * [Python简介](/post/Learning-Python/2018-04-13-python-overview.md)
     * [函数](/post/Learning-Python/2018-04-13-function.md)
@@ -12,8 +19,3 @@
     * [排序和搜索](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-sortting-and-searching.md)
     * [树](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-tress-and-tree-algorithms.md)
     * [图](/post/Problem-Solving-with-Algorithms-and-Data-Structure-using-Python/2018-06-21-graphs-and-graph-algorithms.md)
-* [量子行走](/post/2018-12-12-quantum-walk-note.md)
-* [张量](/post/2019-04-27-tensor.md)
-* [Fourier Optics](/post/2019-01-24-Fourier-Optics.md)
-* [Bose-Hubbard model](/post/2020-01-12-Bose-Hubbard-model.md)
-* [Wannier function](/post/2020-03-13-Wannier-function.md)
