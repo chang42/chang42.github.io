@@ -1,6 +1,6 @@
 # About me
 
-I'm a researcher at Institute of Opto-Electronics, Shanxi University. Previously, I was a postdoctoral researcher supported by SUSTech Presidential Postdoctoral Fellowship. My main research field is experimental AMO, trying to manipulate photons & collective atomic coherence in a single-quantum-level.  
+I'm a researcher at Institute of Opto-Electronics, Shanxi University. Previously, I was a postdoctoral researcher at Southern University of Science and Technology supported by SUSTech Presidential Postdoctoral Fellowship. My main research field is experimental AMO, trying to manipulate photons & collective atomic coherence in a single-quantum-level supervised by [Prof. Jiefei Chen](https://faculty.sustech.edu.cn/?tagid=chenjf&iscss=1&snapid=1&orderby=date&go=2). Collaborating with [Prof. Wenhui Li](https://ioe.sxu.edu.cn/sys/ldbwlsys/zy15/index.htm), I plan to engineer the quantum entanglement in an atomic tweezer array platform by continuous replenishing and quantum error correction.  
 
 ### For undergraduate students
 
@@ -44,9 +44,10 @@ Thesis: High Stable Optical Fabry-Pérot Cavity and its Application in Cavity Qu
     *Abstract: We report high efficient generation of a 509 nm laser beam by a ring cavity frequency doubler with a periodically poled $KTiOPO_{4}$ (PPKTP) crystal. A maximum power of 1.13 W at 509 nm cw light is obtained with mode-matched power of 1.58 W, corresponding to a conversion efficiency of 71.5%. By using the Hänsch–Couillaud locking technique, the doubler is locked with high stability, and power fluctuation smaller than ±0.5% within 1 h is achieved at the maximum output. To the best of our knowledge, this is the highest second-harmonic power produced by a cavity-enhanced PPKTP frequency doubler below 532 nm.*  
 
 ### Conferences
-- **X. Wang**, Quantum Interface between Light and Cold Atomic Ensembles. 13th Applied Optics and Photonics China. Beijing, China. (2024).  
-- **X. Wang**, J. Wang, G. A. Siviloglou, and  J. F. Chen. 非厄密光与原子相干分束器中的量子干涉. 第三届光量子科学与技术学术会议, Taiyuan, Shanxi, China. (2023).  
-- **X. Wang**, J. Wang, G. A. Siviloglou, and  J. F. Chen. [Quantum Interface Based on a Non-Hermitian Magnon-Photon Beamsplitter](https://doi.org/10.1364/CLEO_QELS.2022.FW4D.8). CLEO: Conference on Lasers and Electro-Optics. San Jose, California, USA. (2022).  
+- Special Session [Quantum Information Processing Assisted Quantum Sensing](https://suzhou2026.piers.org/featured-plans/allsessions.html) organized by J. Guo and **X. Wang**, PIERS, Suzhou, China. (2026)  
+- **X. Wang**, Quantum Interface between Light and Cold Atomic Ensembles. 13th Applied Optics and Photonics China. Beijing, China. (2024)  
+- **X. Wang**, J. Wang, G. A. Siviloglou, and  J. F. Chen. 非厄密光与原子相干分束器中的量子干涉. 第三届光量子科学与技术学术会议, Taiyuan, Shanxi, China. (2023)  
+- **X. Wang**, J. Wang, G. A. Siviloglou, and  J. F. Chen. [Quantum Interface Based on a Non-Hermitian Magnon-Photon Beamsplitter](https://doi.org/10.1364/CLEO_QELS.2022.FW4D.8). CLEO: Conference on Lasers and Electro-Optics. San Jose, California, USA. (2022)  
 
 This page is powered by a [Docsify][1] theme on [GitHub Pages][2].
 
