@@ -22,7 +22,7 @@ Thesis: High Stable Optical Fabry-Pérot Cavity and its Application in Cavity Qu
 - 2017-2019, Optical Engineer and Co-founder, TestMind Health Tech., Shenzhen  
 - 2023-2026, Postdoctoral Researcher, SUSTech  
 - 2023-2025, SUSTech Presidential Postdoctoral Fellowship, SUSTech
-- 2026- , Lecturer&Reseacher, Shanxi University
+- 2026- , Lecturer and Researcher, Shanxi University
 
 ### Preprints
 - **X. Wang**, X. Liang, L. Dong, Y. Zuo, J. Wang, D. Yang, L. Chen, G. A. Siviloglou, Z. Y. Ou, and J. F. Chen, [Atom-light hybrid interferometer for atomic sensing with quantum memory](https://arxiv.org/abs/2601.18373), arXiv:2601.18373 (2026).  
